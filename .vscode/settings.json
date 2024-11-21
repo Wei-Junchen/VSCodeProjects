@@ -2,5 +2,49 @@
     "files.associations": {
         "iostream": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    //Background config
+    "background.enabled": true,
+
+    "background.fullscreen": {
+        "images": [],
+        "opacity": 0.1,
+        "size": "cover",
+        "position": "center",
+        "interval": 0,
+        "random": false
+    },
+
+    "background.editor": {
+      "useFront": true,
+      "style": {
+        "background-position": "100% 100%",
+        "background-size": "110%",
+        "opacity": 0.1
+      },
+
+      "styles": [{}, {}, {}],
+      "images": ["file:///C:/Users/WJC/Pictures/Predator/2024_Predator_option_02_3840x2400.jpg"],
+      "interval": 0,
+      "random": false
+    },
+
+    "background.sidebar": {
+        "images": [],
+        "opacity": 0.1,
+        "size": "cover",
+        "position": "center",
+        "interval": 0,
+        "random": false
+    },
+
+    "background.panel": {
+        "images": [],
+        "opacity": 0.1,
+        "size": "cover",
+        "position": "center",
+        "interval": 0,
+        "random": false
+    }
+
 }
