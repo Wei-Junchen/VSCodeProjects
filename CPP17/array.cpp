@@ -13,7 +13,7 @@ int main()
     std::cout<<std::endl<<std::size(a1)<<std::endl;
     std::cout<<a1.front()<<std::endl;
     std::array<float, SIZE>::iterator it=a1.begin();
-    std::array<float, SIZE>::reverse_iterator rit=a1.rbegin();
+    std::array<float, SIZE>::reverse_iterator rit=a1.rbegin(); 
     std::cout<<*(++it)<<" "<<*rit<<std::endl;
     return 0;
 }

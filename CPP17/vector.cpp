@@ -8,4 +8,5 @@ int main()
     for(auto it=a.begin();it!=a.end();++it)
         std::cout<<*it<<" ";
     return 0;
+    
 }
