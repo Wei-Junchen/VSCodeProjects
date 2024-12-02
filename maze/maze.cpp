@@ -7,7 +7,7 @@
 
 #define DEBUG 0
 
-constexpr std::size_t width{15},height{75};
+constexpr std::size_t width{35},height{80};
 std::stack<std::array<int,2>> line;
 int p[1000][3][2]{}; // p[i] -> {{x1,y1},{x2,y2},{x3,y3}}
 int pp[1000]{};

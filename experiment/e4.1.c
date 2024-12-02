@@ -24,7 +24,6 @@ int main(void)
         }
         if(isInsert==0)
         {
-            printf("3\n");
             ++length;
             count[length][0]=num[i];
             count[length][1]=1;
