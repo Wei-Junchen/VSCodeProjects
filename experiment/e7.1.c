@@ -14,7 +14,7 @@ char* str_delete(char* s,int v,int w)
 
 int main(void)
 {
-    char s[10]={};
+    char s[20]={};
     scanf("%s",s);
     printf("%s",str_delete(s,3,4));
     return 0;

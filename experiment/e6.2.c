@@ -21,7 +21,7 @@ double xpoint(double x1,double x2)
 
 double root(double x1,double x2)
 {
-    printf("%lf %lf\n",x1,x2);
+   // printf("%lf %lf\n",x1,x2);
     if(ABS(f((x1+x2)/2))<=limit)
         return (x1+x2)/2;
     else if(ABS(f(x1))<=limit)

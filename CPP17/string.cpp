@@ -10,7 +10,7 @@ int main()
     char *ss=a.data();//可以返回非const类型char*,意味着可以更改std::string 对象的值
     *ss='A';
     std::cout<<a<<std::endl;
-    size_t l=a.length();
+    std::size_t l=a.length();
     std::cout<<l<<std::endl; 
     std::string b{"abcdefg",6};
     std::string c(6,'z');

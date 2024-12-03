@@ -32,12 +32,12 @@ void getCourseAverageGrade(Student* students,int coursenum)
 void getBestGrade(Student* student)
 {
     Student best=student[0];
-    int bestcourse=best.grade[0];
+    int bestcourse=0;
     for(int i=0;i<3;++i)
     {
         for(int j=0;j<3;++j)
         {
-            if(student[i].grade[j]>bestcourse)
+            if(student[i].grade[j]>best.grade[bestcourse])
             {
                 best=student[i];
                 bestcourse=j;

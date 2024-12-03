@@ -9,11 +9,12 @@ typedef struct
 int compare(char* s1,char* s2)
 {
     int index=0;
-    while(s1[index]!='\0'||s2[index]!='\0')
+    while(s1[index]!='\0'&&s2[index]!='\0')
     {
         if(s1[index]!=s2[index]) return 0;
         ++index;
     }
+    if(s1[index]!='\0'||s2[index]!='\0') return 0;
     return 1;
 }
 

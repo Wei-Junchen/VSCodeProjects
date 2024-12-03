@@ -16,6 +16,6 @@ int day_of_year(int year,int month,int day)
 
 int main(void)
 {
-    printf("%d",day_of_year(2024,3,1));
+    printf("%d\n%d",day_of_year(2024,6,13),day_of_year(2024,10,1));
     return 0;
 }

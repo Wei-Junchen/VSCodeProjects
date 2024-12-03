@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int operator(int x,int y,char op)
+int operato(int x,int y,char op)
 {
     switch (op)
     {
@@ -19,7 +19,7 @@ int operator(int x,int y,char op)
 
 int main(void)
 {
-    int x=12,y=34;
-    printf("%d",operator(x,y,'+'));
+    int x=03,y=47;
+    printf("%d\n%d\n%d\n%d",operato(x,y,'+'),operato(x,y,'-'),operato(x,y,'*'),operato(x,y,'/'));
     return 0;
 }
