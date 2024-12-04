@@ -32,6 +32,5 @@ int main()
     //song_title+=69;// 不会报错，注意
     song_title.append(std::to_string(69));//可
     std::cout<<song_title<<std::endl;
-    
     return 0;
 }
