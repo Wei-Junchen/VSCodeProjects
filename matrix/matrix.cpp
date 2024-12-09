@@ -11,6 +11,7 @@ public:
     Matrix(unsigned int,unsigned int,T**);
     ~Matrix();
     void operator=(const Matrix&);
+    Matrix transpose();
     Matrix operator+(const Matrix&);
     Matrix operator-(const Matrix&);
     Matrix operator*(const Matrix&);
@@ -137,6 +138,16 @@ template<typename T>
 T* Matrix<T>::operator[](unsigned int index)
 {
     return matrix[index];
+}
+
+template<typename T>
+Matrix<T> Matrix<T>::transpose()
+{
+    T** tmp = allocateTmpMatrix(line, row);
+    for (unsigned int i = 0; i < row; ++i)
+        for (unsigned int j = 0; j < line; ++j)
+            tmp[j][i] = matrix[i][j];
+    return Matrix<T>(line, row, tmp);
 }
 
 int main()
