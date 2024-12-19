@@ -1,5 +1,14 @@
 #include <iostream>
 #include <string>
+#include <string_view>
+
+void printStr(std::string_view str)
+{
+    for(auto i:str)
+        std::cout<<i;
+    std::cout<<std::endl;
+    std::cout<<str<<std::endl;
+}
 
 int main()
 {
@@ -32,5 +41,8 @@ int main()
     //song_title+=69;// 不会报错，注意
     song_title.append(std::to_string(69));//可
     std::cout<<song_title<<std::endl;
+    std::string str{".Hello,world"};
+    printStr(str);
+    std::cout<<str.find_first_not_of(".,")<<std::endl;//返回第一个不在指定字符串中的字符的索引
     return 0;
 }
